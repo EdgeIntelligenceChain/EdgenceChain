@@ -16,6 +16,8 @@ COPY / .
 # Make port 9999 available to the world outside this container
 EXPOSE 9999
 
-# command to run on container start
-CMD [ "python", "main.py" ]
+# entrypoint for this app
+ENTRYPOINT ["python"]
 
+# parameter to run on container start
+CMD ["main.py"]
